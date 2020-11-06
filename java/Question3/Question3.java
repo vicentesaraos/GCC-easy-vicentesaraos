@@ -57,7 +57,7 @@ class Solution {
 
         StringBuilder answer = new StringBuilder(profit.length*3);
         for(int y=0;y<zz.length;y+=2){
-            if (zz[y].equals(0)){answer.append("-1");}
+            if (zz[y]==0){answer.append("-1");}
             else{
             answer.append(zz[y]);
             answer.append(" ");
