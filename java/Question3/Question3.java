@@ -28,7 +28,7 @@ class Solution {
     public static String findMinDays(int[] values, int[] profit) {
 
         // Participant's code will go here
-        int a=0;
+         int a=0;
         int b=0;
         int c=0;
         int aa = 0;
@@ -62,6 +62,9 @@ class Solution {
             answer.append(zz[y+1]);
             if (zz.length > 2 && y != zz.length/2){ answer.append(",");}
         }
-        return answer.toString();
+        String answer2 = answer.toString();
+        if (answer2.charAt(0) == '0') {return "";}
+        return answer2;
+
     }
 }
