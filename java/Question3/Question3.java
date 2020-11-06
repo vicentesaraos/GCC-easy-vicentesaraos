@@ -68,7 +68,7 @@ class Solution {
             if (zz.length > 2 && y <= zz.length - 3){ answer.append(",");}
         }
         String answer2 = answer.toString();
-      //  for (int az = 0; az < answer.length(); az++){if(answer2.charAt(az)!= '-' && answer2.charAt(az)!='1' && answer2.charAt(az)!=' '){break;}return "-1";}
+    
         return answer2;
 
     }
