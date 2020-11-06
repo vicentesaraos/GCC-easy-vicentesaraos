@@ -63,7 +63,7 @@ class Solution {
             if (zz.length > 2 && y != zz.length/2){ answer.append(",");}
         }
         String answer2 = answer.toString();
-        if (answer2.charAt(0) == '0') {return "";}
+        if (answer2.charAt(0) == '0') {return "-1";}
         return answer2;
 
     }
