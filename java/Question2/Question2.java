@@ -7,7 +7,12 @@ class Solution {
     // You may change this function parameters
     static int findMaxProfit(int numOfPredictedTimes, int[] predictedSharePrices) {
         // Participant's code will go here
-        return -1;
+        
+        int max=0;
+        for (int i=1; i < predictedSharePrices.length; i++){
+            if(predictedSharePrices[i-1] < predictedSharePrices[i]){max+=predictedSharePrices[i] - predictedSharePrices[i-1];}
+        }
+        return max;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
