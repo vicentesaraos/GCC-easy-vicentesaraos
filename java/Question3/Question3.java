@@ -57,13 +57,15 @@ class Solution {
 
         StringBuilder answer = new StringBuilder(profit.length*3);
         for(int y=0;y<zz.length;y+=2){
+            if (zz[y] = "0"){answer.append("-1");}
+            else{
             answer.append(zz[y]);
             answer.append(" ");
-            answer.append(zz[y+1]);
+            answer.append(zz[y+1]);}
             if (zz.length > 2 && y != zz.length/2){ answer.append(",");}
         }
         String answer2 = answer.toString();
-        if (answer2.charAt(0) == '0') {return "-1";}
+      //  if (answer2.charAt(0) == '0') {return "-1";}
         return answer2;
 
     }
